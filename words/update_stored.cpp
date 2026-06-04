@@ -43,8 +43,8 @@ int main() {
     newfile.close();
     stored_out.close();
 
-    std::cout << "✅ Comparison complete.\n";
-    std::cout << "🆕 " << new_count << " new words added to stored.txt\n";
+    std::cout << " Comparison complete.\n";
+    std::cout << "ssr " << new_count << " new words added to stored.txt\n";
 
     // Step 3: Clean stored.txt (remove 1-letter lines)
     std::ifstream clean_in("stored.txt");
@@ -62,9 +62,9 @@ int main() {
     }
     clean_out.close();
 
-    std::cout << "🧹 Cleaned stored.txt (removed single-letter words)\n";
+    std::cout << " Cleaned stored.txt (removed single-letter words)\n";
 
-    // ✅ Step 4: Count total number of lines/words in stored.txt
+    //  Step 4: Count total number of lines/words in stored.txt
     std::ifstream count_file("stored.txt");
     int line_count = 0;
     std::string temp;
