@@ -6,7 +6,7 @@
 int main() {
     std::ifstream infile("stored.txt");
     if (!infile.is_open()) {
-        std::cerr << "❌ Error: Could not open stored.txt\n";
+        std::cerr << " Error: Could not open stored.txt\n";
         return 1;
     }
 
@@ -22,7 +22,7 @@ int main() {
     // Overwrite stored.txt with sorted unique words
     std::ofstream outfile("stored.txt");
     if (!outfile.is_open()) {
-        std::cerr << "❌ Error: Could not write to stored.txt\n";
+        std::cerr << " Error: Could not write to stored.txt\n";
         return 1;
     }
 
@@ -32,7 +32,7 @@ int main() {
 
     outfile.close();
 
-    std::cout << "✅ stored.txt sorted alphabetically and duplicates removed (" 
+    std::cout << " stored.txt sorted alphabetically and duplicates removed (" 
               << words_set.size() << " words).\n";
     return 0;
 }
